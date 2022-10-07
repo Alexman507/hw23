@@ -1,6 +1,5 @@
 from flask import Blueprint
-from builder import build_query
-from models import RequestParams
+from hw23.builder import build_query
 
 main_bp = Blueprint('main', __name__)
 
