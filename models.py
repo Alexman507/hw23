@@ -11,10 +11,8 @@ VALID_CMD_PARAMS =(
 
 
 class RequestParams(Schema):
-    cmd1 = fields.Str(required=True)
-    value1 = fields.Str(required=True)
-    cmd2 = fields.Str(required=True)
-    value2 = fields.Str(required=True)
+    cmd = fields.Str(required=True)
+    value = fields.Str(required=True)
 
     @validates_schema
     def validate_cmd_params(self, values, *args, **kwargs):
